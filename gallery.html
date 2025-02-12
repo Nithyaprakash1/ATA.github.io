@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Portfolio</title>
+  <link rel="stylesheet" href="gallery-style.css">
+</head>
+<body class="fade-in">
+<div class="area">
+  <ul class="circles">
+    <li>
+      <div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div>
+    </li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+  </ul>
+</div>
+
+  <div class="gallery-container">
+    <h1><span class="shining-text" >Adwaith Thought Academy</span></h1>
+    <p class="intro-text">Explore the highlights of our school, infrastructure, dedicated faculties, remarkable achievements, and many more!</p>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-link="infra.html">
+        <img src="asset/gallery/activity-room.png" alt="School Infrastructure">
+        <hr>
+        <p>State-of-the-Art Infrastructure</p>
+      </div>
+      <div class="gallery-item" data-link="labs&classroom.html">
+        <img src="asset/gallery/claassroom.png" alt="labs&classroom">
+        <hr>
+        <p>Labs & Classrooms</p>
+      </div>
+      <div class="gallery-item" data-link="teachers.html">
+        <img src="asset/gallery/grpteachers.png" alt="Teachers">
+        <hr>
+        <p>Dedicated and Experienced faculties</p>
+      </div>
+      <div class="gallery-item" data-link="achievements.html">
+        <img src="asset/gallery/grpstudent.png" alt="Achievements">
+        <hr>
+        <p>Our Celebrations</p>
+      </div>
+      <div class="gallery-item" data-link="about.html">
+        <img src="asset/gallery/sports.png" alt="Sports and Extracurricular activities">
+        <hr>
+        <p>Sports and Extracurricular activities</p>
+      </div>
+      <div class="gallery-item" data-link="feedback.html">
+        <img src="asset/gallery/016A3198.png" alt="Share your observations.l">
+        <hr>
+        <p>Share your observations.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  const body = document.body;
+
+  let selectedItem = null;
+
+  galleryItems.forEach(item => {
+    item.addEventListener("click", (event) => {
+      // Check if the clicked item is already highlighted
+      if (item === selectedItem) {
+        const url = item.getAttribute("data-link");
+        if (url) {
+          window.location.href = url;
+        }
+        return; // Stop further execution
+      }
+
+      galleryItems.forEach(i => i.classList.remove("highlighted"));
+
+      item.classList.add("highlighted");
+      selectedItem = item;
+
+      body.classList.add("blurred");
+
+      event.stopPropagation();
+    });
+  });
+
+  // Handle background click
+  body.addEventListener("click", (event) => {
+    // Check if the click is outside the gallery items
+    if (!event.target.closest(".gallery-item")) {
+      // Remove highlights and blur effect
+      galleryItems.forEach(item => item.classList.remove("highlighted"));
+      body.classList.remove("blurred");
+      selectedItem = null;
+    }
+  });
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="splash-container">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="welcome-text">
+      <span>W</span>
+      <span>e</span>
+      <span>l</span>
+      <span>c</span>
+      <span>o</span>
+      <span>m</span>
+      <span>e</span>
+    </div>
+  </div>
+
+  <script>
+    // Add transition animation and redirect to the gallery page
+    setTimeout(() => {
+      document.body.classList.add('fade-out'); // Add the fade-out class
+      setTimeout(() => {
+        window.location.href = "gallery.html"; // Redirect after animation
+      }, 2000); // Match the duration of the fade-out animation
+    }, 8000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adwaith Thought Academy</title>
+<link rel="stylesheet" href="styleabout.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .slider-container {
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    flex: 0 0 33.33%;
+    padding: 5px;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Slideshow styles */
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  * {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 7.5em;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  #slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 1200px;
+    height: 500px;
+  }
+  #slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav__content">
+    <img src="logo.png" alt="Adwaith Thought Academy Logo" style="width: 100px; height: 60px;">
+    <a href="gallery.html">Gallery</a>
+    <a href="infra.html">Infrastructure</a>
+    <a href="teachers.html">Our Faculties</a>
+    <a href="achievements.html">Celebrations</a>
+    <a href="labs&classroom.html">Labs & Classroom</a>
+    <a href="about.html">Sports and Extracurricular activities</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</nav>
+
+<section>
+  <div class="section__content">
+    <h1>
+     <span style="font-size: 40px; color: #f47c24; font-weight: bold;">Our</span>
+<span style="color: #fff; font-weight: bold;">Celebrations</span>
+
+    </h1>
+  </div>
+</section>
+
+<div id="slideshow">
+    <div><img src="asset/Celebration/C15.png" ></div>
+   <div><img src="asset/Celebration/C16.png" ></div>
+   <div><img src="asset/Celebration/C17.png" ></div>
+   <div><img src="asset/Celebration/C18.png" ></div>
+   <div><img src="asset/Celebration/C19.png" ></div>
+   <div><img src="asset/Celebration/C20.png" ></div>
+    <div><img src="asset/Celebration/c21.png"></div>
+    <div><img src="asset/Celebration/c22.png"></div>
+    <div><img src="asset/Celebration/c23.png"></div>
+   <div><img src="asset/Celebration/C1.png"></div>
+   <div><img src="asset/Celebration/C2.png" ></div>
+   <div><img src="asset/Celebration/C3.png" ></div>
+   <div><img src="asset/Celebration/C4.png" ></div>
+   <div><img src="asset/Celebration/C4A.png" ></div>
+   <div><img src="asset/Celebration/C5.png" ></div>
+   <div><img src="asset/Celebration/C6.png" ></div>
+   <div><img src="asset/Celebration/C7.png" ></div>
+   <div><img src="asset/Celebration/C8.png" ></div>
+   <div><img src="asset/Celebration/C9.png" ></div>
+   <div><img src="asset/Celebration/C10.png" ></div>
+   <div><img src="asset/Celebration/C11.png" ></div>
+   <div><img src="asset/Celebration/C12.png" ></div>
+</div>
+
+<div class="area">
+    <style>.area{
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height:100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.animated-square {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+</style>
+  <ul class="circles">
+    <li>
+      <div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div>
+    </li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+    <li><div class="animated-square">
+        <img src="asset/schlogo.png" alt="Logo" class="logo">
+      </div></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function() {
+  let slides = $("#slideshow > div");
+  let index = 0;
+
+  function showNextSlide() {
+    let currentSlide = slides.eq(index);
+    index = (index + 1) % slides.length;
+    let nextSlide = slides.eq(index);
+
+    // Fade out the current slide and fade in the next one
+    currentSlide.fadeOut(500);
+    nextSlide.fadeIn(500);
+  }
+
+  slides.hide().eq(0).show(); // Initial slide setup (hide others, show the first one)
+  setInterval(showNextSlide, 2000);  // Change the time interval as necessary
+});
+</script>
+
+</body>
+</html>
+
